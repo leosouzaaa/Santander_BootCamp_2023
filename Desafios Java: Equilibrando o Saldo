@@ -1,0 +1,18 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class EquilibrandoSaldo {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        double saldoAtual = Double.parseDouble(br.readLine());
+        double valorDeposito = Double.parseDouble(br.readLine());
+        double valorRetirada = Double.parseDouble(br.readLine());
+
+        double saldoAtualizado = saldoAtual + valorDeposito - valorRetirada;
+
+        System.out.printf("Saldo atualizado na conta: %.1f%n", saldoAtualizado);
+    }
+}
