@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        double valor = scanner.nextDouble();
+
+        if (valor > 0) {
+            double saldo = valor;
+            System.out.println("Depósito realizado com sucesso!");
+            System.out.println("Saldo atual: " + saldo);
+        } else if (valor < 0) {
+            System.out.println("Encerrando o programa...");
+        } else {
+            System.out.println("Valor inválido! Digite um valor maior que zero.");
+        }
+    }
+}
